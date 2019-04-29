@@ -1,0 +1,19 @@
+{
+  "name": "immj-logger",
+  "version": "1.0.0",
+  "description": "IMMJ Systems Syslog Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "nodemon": "^1.18.11",
+    "nsyslog-parser": "^0.9.0",
+    "socket.io": "^2.2.0",
+    "syslogd": "^1.1.2"
+  }
+}

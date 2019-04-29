@@ -1,0 +1,13 @@
+version: '2'
+services:
+  nodered:
+    image: nodered/node-red-docker:0.17.5
+    restart: always
+    environment:
+      - TZ=America/Montreal
+    logging:
+      driver: syslog
+      options:
+        syslog-address: "udp://172.16.1.51:514"
+        syslog-format: "rfc3164"
+        tag: "node-red"
